@@ -1,0 +1,13 @@
+class User:
+    def solve(self, n):
+        pass
+
+
+class Student(User):
+    pass
+
+
+class Teacher(User):
+    def check_solution(self, user, n):
+        pass
+ 
