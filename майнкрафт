@@ -3,10 +3,7 @@ class BaseObject:
         self._x = x
         self._y = y
         self._z = z
-        
-        # или создаем кортеж, например,
-        # self._c = (x, y, z)
-
+       
     def get_coordinates(self):
        return (self._x, self._y, self._z)
   
