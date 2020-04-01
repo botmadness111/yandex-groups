@@ -16,19 +16,3 @@ class Quadrilateral(Polygon):
 
 class IsoscelesTriangle(Triangle):
     pass
-
-
-class EquilateralTriangle(IsoscelesTriangle):
-    pass
-
-
-class Parallelogram(Quadrilateral):
-    pass
-
-
-class Rectangle(Parallelogram):
-    pass
-
-
-class Square(Rectangle):
-    pass
