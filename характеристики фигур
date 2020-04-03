@@ -1,0 +1,53 @@
+from math import pi
+
+
+class Shape:
+    def describe(self):
+        print("Класс: {}\nПериметр: {}\nПлощадь: {}".format(
+            self.__class__.__name__, self.perimeter(), self.area()))
+
+    def area(self):
+        return None
+
+    def perimeter(self):
+        return None
+
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.r = radius
+
+    def area(self):
+        return pi * self.r ** 2
+
+    def perimeter(self):
+        return 2 * pi * self.r
+
+
+class Rectangle(Shape):
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def area(self):
+        return self.a * self.b
+
+    def perimeter(self):
+        return 2 * (self.a + self.b)
+
+
+class Square(Rectangle):
+    def __init__(self, size):
+        print('Создаем квадрат')
+        super().__init__(size, size)
+
+
+shape = Shape()
+circle = Circle(5)
+rectangle = Rectangle(3, 4)
+square = Square(5)
+
+shape.describe()
+circle.describe()
+rectangle.describe()
+square.describe()
