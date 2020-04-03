@@ -1,0 +1,9 @@
+n = int(input())
+butl = []
+for i in range(n):
+    butl.append(int(input()))
+k = int(input())
+m = int(input())
+for i in range(n):
+    if k <= butl[i] <= m:
+        print(butl[i])
