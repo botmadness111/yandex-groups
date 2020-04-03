@@ -7,4 +7,6 @@ class Triangle:
 
 
 class EquilateralTriangle(Triangle):
+    def __init__(self, a):
+        super().__init__(a, a, a)
  
