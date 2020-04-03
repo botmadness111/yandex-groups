@@ -16,9 +16,9 @@ class PowerSummator(Summator):
 
 class SquareSummator(PowerSummator):
     def __init__(self):
-        super().__init__(...)
+        super().__init__(2)
 
 
 class CubeSummator(PowerSummator):
     def __init__(self):
-        super().__init__(...)
+        super().__init__(3)
