@@ -1,0 +1,15 @@
+class Summator:
+    def transform(self, n):
+        return n
+
+    def sum(self, N):
+        
+        
+
+class SquareSummator(Summator):
+    def transform(self, n):
+       ...
+
+class CubeSummator(Summator):
+    def transform(self, n):
+       ...
