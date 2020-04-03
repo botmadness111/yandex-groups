@@ -1,0 +1,24 @@
+class Summator:
+    def transform(self, n):
+        return n
+
+    def sum(self, N):
+        ...
+
+
+class PowerSummator(Summator):
+    def __init__(self, b):
+        self._b = b
+
+    def transform(self, n):
+        return ...
+
+
+class SquareSummator(PowerSummator):
+    def __init__(self):
+        super().__init__(...)
+
+
+class CubeSummator(PowerSummator):
+    def __init__(self):
+        super().__init__(...)
